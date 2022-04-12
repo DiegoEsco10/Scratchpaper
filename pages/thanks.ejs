@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+<div class="row">
+    <div class="col-sm-8">
+
+
+
+                <div>
+            <form action="/" method="post">
+                <h2>Please Enter Heros Name</h2>
+                <div class="form-group">
+                <div class="jumbotron">
+                    <label for="exampleInputEmail1" class="form-label">Heros Name</label>
+                    <input type="text" id="myHero" name="myHero" class="form-control" placeholder="hero" required
+                    autofocus>
+                </div>
+                <input class="btn btn-lg btn-primary btn-block" type="submit">
+    <h3>
+        <h1>Hello</h1>
+    <p>Lorem</p>
+    <script>
+        // Print out the variable I got
+        console.log(<%= locals.aliases %>)
+        // or
+        console.log("<%= locals.aliases %>")
+    </script>
+    </h3>
+
+</div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
