@@ -12,9 +12,6 @@
 <main>
 <div class="row">
     <div class="col-sm-8">
-
-
-
                 <div>
             <form action="/" method="post">
                 <h2>Please Enter Heros Name</h2>
@@ -25,16 +22,28 @@
                     autofocus>
                 </div>
                 <input class="btn btn-lg btn-primary btn-block" type="submit">
-    <h3>
-        <h1>Hello</h1>
-    <p>Lorem</p>
-    <script>
+  <script>
+        const data = locals.aliases
         // Print out the variable I got
-        console.log(<%= locals.aliases %>)
+        console.log(<%= (locals.aliases) %>);
         // or
         console.log("<%= locals.aliases %>")
     </script>
-    </h3>
+
+   <ul>
+    <% for (var i =0; i <=locals.aliases.length;  i++ ) { %>
+    <li>  <%= locals.aliases[i] %> </li>
+    <%#  will output the numbers 1-10 %>
+    <% } %>
+</ul>
+
+    <script>
+        // Print out the variable I got
+        console.log(<%= (locals.aliases) %>);
+        // or
+        console.log("<%= locals.aliases %>")
+    </script>
+
 
 </div>
 </main>
